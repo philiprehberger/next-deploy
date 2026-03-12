@@ -1,4 +1,4 @@
-# @philiprehberger/ts-next-deploy
+# @philiprehberger/next-deploy
 
 Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management.
 
@@ -15,7 +15,7 @@ Release-based SSH deployment for Next.js apps with symlinks, dependency caching,
 ## Installation
 
 ```bash
-npm install @philiprehberger/ts-next-deploy
+npm install @philiprehberger/next-deploy
 ```
 
 ## Server Structure
@@ -74,7 +74,7 @@ RELEASES_TO_KEEP=5
 ## Programmatic API
 
 ```ts
-import { deploy, loadConfigFromEnv } from '@philiprehberger/ts-next-deploy';
+import { deploy, loadConfigFromEnv } from '@philiprehberger/next-deploy';
 
 const config = loadConfigFromEnv({
   hooks: {

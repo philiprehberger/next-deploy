@@ -1,6 +1,6 @@
 {
-  "name": "@philiprehberger/ts-next-deploy",
-  "version": "0.1.1",
+  "name": "@philiprehberger/next-deploy",
+  "version": "0.1.2",
   "description": "Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
