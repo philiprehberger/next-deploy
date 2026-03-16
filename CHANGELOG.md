@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+- Add Development section to README
+- Fix CI badge to reference publish.yml
+
 ## 0.1.2
 
 - Update repository URLs to new ts-prefixed GitHub repo

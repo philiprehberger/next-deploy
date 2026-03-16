@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/next-deploy",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,13 +20,23 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "node --test src/__tests__/index.test.mjs"
   },
-  "keywords": ["next.js", "deploy", "ssh", "pm2", "release", "symlink", "deployment"],
+  "keywords": [
+    "next.js",
+    "deploy",
+    "ssh",
+    "pm2",
+    "release",
+    "symlink",
+    "deployment"
+  ],
   "author": "Philip Rehberger",
   "license": "MIT",
   "dependencies": {
@@ -38,8 +48,15 @@
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/philiprehberger/ts-next-deploy.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philiprehberger/ts-next-deploy.git"
+  },
   "homepage": "https://github.com/philiprehberger/ts-next-deploy#readme",
-  "bugs": { "url": "https://github.com/philiprehberger/ts-next-deploy/issues" },
-  "engines": { "node": ">=18.0.0" }
+  "bugs": {
+    "url": "https://github.com/philiprehberger/ts-next-deploy/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

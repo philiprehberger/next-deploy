@@ -1,6 +1,6 @@
 # @philiprehberger/next-deploy
 
-[![CI](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/next-deploy/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/next-deploy/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-deploy.svg)](https://www.npmjs.com/package/@philiprehberger/next-deploy)
 [![License](https://img.shields.io/github/license/philiprehberger/next-deploy)](LICENSE)
 
@@ -90,6 +90,15 @@ const config = loadConfigFromEnv({
 
 const result = await deploy(config, { skipBuild: false });
 console.log(result.success ? 'Done!' : `Failed: ${result.error}`);
+```
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
 ```
 
 ## License
