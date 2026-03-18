@@ -4,17 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-deploy.svg)](https://www.npmjs.com/package/@philiprehberger/next-deploy)
 [![License](https://img.shields.io/github/license/philiprehberger/next-deploy)](LICENSE)
 
-Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management.
-
-## Features
-
-- Release-based deployments with atomic symlink switching
-- Production dependency caching (skips npm install when lockfile unchanged)
-- Automatic old release cleanup
-- Shared .env file linking
-- PM2 process restart
-- Lifecycle hooks (preBuild, postBuild, preSwitch, postSwitch, postDeploy)
-- CLI and programmatic API
+Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management
 
 ## Installation
 
@@ -22,7 +12,9 @@ Release-based SSH deployment for Next.js apps with symlinks, dependency caching,
 npm install @philiprehberger/next-deploy
 ```
 
-## Server Structure
+## Usage
+
+### Server Structure
 
 ```
 /var/www/myapp/
@@ -35,7 +27,7 @@ npm install @philiprehberger/next-deploy
     └── .env
 ```
 
-## CLI Usage
+### CLI
 
 ```bash
 npx next-deploy
@@ -44,7 +36,7 @@ npx next-deploy --fresh
 npx next-deploy --dry-run
 ```
 
-## Configuration
+### Configuration
 
 ### Option 1: Config file (`deploy.config.js`)
 
@@ -75,7 +67,7 @@ SERVER_PM2_PROCESS=myapp
 RELEASES_TO_KEEP=5
 ```
 
-## Programmatic API
+### Programmatic API
 
 ```ts
 import { deploy, loadConfigFromEnv } from '@philiprehberger/next-deploy';
@@ -92,6 +84,14 @@ const result = await deploy(config, { skipBuild: false });
 console.log(result.success ? 'Done!' : `Failed: ${result.error}`);
 ```
 
+
+## API
+
+| Method | Description |
+|--------|-------------|
+| `deploy(config, options?)` | Run a full deployment with the given config and options |
+| `loadConfig(projectRoot)` | Load deploy config from a config file in the project root |
+| `loadConfigFromEnv(overrides?)` | Load deploy config from environment variables with optional overrides |
 
 ## Development
 
