@@ -1,6 +1,6 @@
 # @philiprehberger/next-deploy
 
-[![CI](https://github.com/philiprehberger/next-deploy/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/next-deploy/actions/workflows/publish.yml)
+[![CI](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-deploy.svg)](https://www.npmjs.com/package/@philiprehberger/next-deploy)
 [![License](https://img.shields.io/github/license/philiprehberger/next-deploy)](LICENSE)
 
@@ -21,7 +21,7 @@ npm install @philiprehberger/next-deploy
 ├── releases/
 │   ├── 20251212112502/
 │   ├── 20251213093015/
-│   └── ...
+│   └── ..
 ├── current -> releases/20251213093015/
 └── shared/
     └── .env
