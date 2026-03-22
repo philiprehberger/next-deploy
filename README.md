@@ -1,8 +1,8 @@
 # @philiprehberger/next-deploy
 
-[![CI](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/next-deploy/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/ts-next-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-next-deploy/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-deploy.svg)](https://www.npmjs.com/package/@philiprehberger/next-deploy)
-[![License](https://img.shields.io/github/license/philiprehberger/next-deploy)](LICENSE)
+[![License](https://img.shields.io/github/license/philiprehberger/ts-next-deploy)](LICENSE)
 
 Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management
 
