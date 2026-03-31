@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/next-deploy",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Release-based SSH deployment for Next.js apps with symlinks, dependency caching, and PM2 management",
   "type": "module",
   "main": "./dist/index.cjs",
