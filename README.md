@@ -34,6 +34,8 @@ npx next-deploy
 npx next-deploy --skip-build
 npx next-deploy --fresh
 npx next-deploy --dry-run
+npx next-deploy --keep 10           # override releasesToKeep at runtime
+npx next-deploy rollback            # switch to the previous release and restart
 ```
 
 ### Configuration
@@ -89,6 +91,7 @@ console.log(result.success ? 'Done!' : `Failed: ${result.error}`);
 | Method | Description |
 |--------|-------------|
 | `deploy(config, options?)` | Run a full deployment with the given config and options |
+| `rollback(config)` | Switch the `current` symlink to the previous release and restart PM2 |
 | `loadConfig(projectRoot)` | Load deploy config from a config file in the project root |
 | `loadConfigFromEnv(overrides?)` | Load deploy config from environment variables with optional overrides |
 

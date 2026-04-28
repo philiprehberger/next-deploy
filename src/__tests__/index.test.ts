@@ -11,4 +11,8 @@ describe('next-deploy', async () => {
   it('exports loadConfigFromEnv as a function', () => {
     assert.ok(typeof mod.loadConfigFromEnv === 'function');
   });
+
+  it('exports rollback as a function', () => {
+    assert.ok(typeof mod.rollback === 'function');
+  });
 });

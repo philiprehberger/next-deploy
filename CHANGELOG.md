@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Add `rollback` subcommand: `next-deploy rollback` switches `current` to the previous release and restarts PM2
+- Add `--keep N` CLI flag to override `releasesToKeep` at runtime
+- Export programmatic `rollback(config)`
+
 ## 0.1.9
 
 - Fix README GitHub URLs to use correct repo name (ts-next-deploy)
