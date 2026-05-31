@@ -43,7 +43,7 @@
   "author": "Philip Rehberger",
   "license": "MIT",
   "dependencies": {
-    "archiver": "^7.0.0",
+    "archiver": "^8.0.0",
     "node-ssh": "^13.2.0"
   },
   "devDependencies": {
