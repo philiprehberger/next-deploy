@@ -47,7 +47,7 @@
     "node-ssh": "^13.2.0"
   },
   "devDependencies": {
-    "@types/archiver": "^7.0.0",
+    "@types/archiver": "^8.0.0",
     "tsup": "^8.0.0",
     "typescript": "^6.0.2"
   },
