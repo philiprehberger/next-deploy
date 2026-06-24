@@ -1,7 +1,7 @@
 import fs from 'fs';
 import fsp from 'fs/promises';
 import path from 'path';
-import archiver from 'archiver';
+import { ZipArchive } from 'archiver';
 import { NodeSSH } from 'node-ssh';
 import { execSync } from 'child_process';
 import type { DeployConfig, DeployOptions, DeployResult } from './types';
@@ -82,7 +82,7 @@ async function createDeploymentPackage(
   log('📦', 'Creating deployment package...');
 
   return new Promise((resolve, reject) => {
-    const archive = archiver('zip', { zlib: { level: 6 } });
+    const archive = new ZipArchive({ zlib: { level: 6 } });
     const stream = fs.createWriteStream(zipPath);
 
     stream.on('close', () => {
